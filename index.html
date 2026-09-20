@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>SAPA · Phở · vjetnamiešu virtuve Skolas ielā 12, Rīga</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;800&display=swap" rel="stylesheet">
+<style>
+/* SAPA, v2 — the studio table. They photograph their food two ways: top-down on dark slate with
+   chilis, lime and star anise scattered around the bowl, and on plain white. So the page has two
+   surfaces — slate and white — and the dark photographs float on the slate with their edges faded
+   into the page, as if the bowl stood on the table you are looking at. The dishes are named in
+   Vietnamese, large, set in Be Vietnam Pro — a typeface drawn for that language — with Latvian
+   under each. Red is the chili. Nothing is drawn; every picture is theirs. */
+:root{--slate:#1b1d20;--slate2:#25282c;--white:#fff;--ink:#141516;--red:#d8352b;--mute:#8e949a;--mute-l:#666b70;--sans:"Be Vietnam Pro",system-ui,sans-serif;--pad:24px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--slate);color:#f3f1ec;font:400 1.06rem/1.6 var(--sans)}
+img{display:block;max-width:100%;height:auto}
+[data-lang][hidden]{display:none!important}
+.wrap{max-width:1200px;margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+.notice{background:#0c0d0e;color:#a9aeb3;font:500 .74rem/1.4 var(--sans);text-align:center;padding:6px 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.notice b{color:#fff}
+.top{display:flex;justify-content:space-between;align-items:center;height:76px}
+.name{font:800 1.35rem/1 var(--sans);letter-spacing:.06em;color:inherit;text-decoration:none}
+.name small{font:400 .85rem/1;letter-spacing:0;color:var(--mute);margin-left:14px}
+.lang a{font:500 .85rem/1 var(--sans);color:inherit;text-decoration:none;margin-left:16px;opacity:.55;cursor:pointer;padding-bottom:3px}
+.lang a.on{opacity:1;border-bottom:2px solid var(--red)}
+.k{font:500 .82rem/1.4 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--mute);margin:0 0 18px}
+/* hero */
+.hero{padding:16px 0 40px;overflow:hidden}
+.hero .grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:24px;align-items:center}
+h1{font:800 clamp(6rem,15vw,13.5rem)/.88 var(--sans);letter-spacing:-.04em;margin:0 0 .12em;color:#fff}
+.hero blockquote{margin:0;font:400 1.22rem/1.5 var(--sans);color:#d9d6cf;max-width:36ch}
+.hero blockquote cite{display:block;font:400 .88rem/1.4 var(--sans);font-style:normal;color:var(--mute);margin-top:10px}
+.hero .acts{display:flex;align-items:center;gap:26px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-block;background:var(--red);color:#fff;font:800 1rem/1 var(--sans);letter-spacing:.02em;padding:18px 26px;text-decoration:none}
+.btn:hover{background:#c12d24}
+.tel{font:500 1.05rem/1 var(--sans);color:#fff;text-decoration:none;border-bottom:2px solid var(--red);padding-bottom:3px}
+.float{margin:0}
+.float img{width:100%;-webkit-mask-image:radial-gradient(ellipse 60% 60% at 50% 50%,#000 42%,transparent 100%);mask-image:radial-gradient(ellipse 60% 60% at 50% 50%,#000 42%,transparent 100%)}
+/* dishes */
+.dish{padding:64px 0}
+.dish.light{background:var(--white);color:var(--ink)}
+.dish .grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:40px;align-items:center}
+.dish .grid.flip .words{order:2}
+.vi{font:800 clamp(2.8rem,6.4vw,5.6rem)/.95 var(--sans);letter-spacing:-.035em;margin:0 0 .2em}
+.dish.light .vi{color:var(--ink)}
+.lv{font:400 1.2rem/1.5 var(--sans);color:var(--mute);max-width:34ch;margin:0}
+.dish.light .lv{color:var(--mute-l)}
+.dish figure{margin:0}
+.dish.light figure img{width:100%}
+.pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+.pair figure{margin:0}
+.pair figcaption{font:400 1rem/1.45 var(--sans);color:var(--mute-l);margin-top:10px}
+.pair figcaption b{font-weight:800;color:var(--ink)}
+.note{font:400 .9rem/1.5 var(--sans);color:var(--mute-l);margin:36px 0 0;max-width:60ch}
+/* kitchen */
+.kitchen{padding:72px 0 40px}
+.kitchen .grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:32px;align-items:center}
+.kitchen blockquote{margin:0 0 34px;font:800 clamp(1.5rem,2.6vw,2.2rem)/1.2 var(--sans);letter-spacing:-.02em;color:#fff}
+.kitchen blockquote.q{font:400 1.25rem/1.5 var(--sans);color:#d9d6cf;letter-spacing:0}
+.kitchen blockquote cite{display:block;font:400 .88rem/1.4 var(--sans);font-style:normal;color:var(--mute);margin-top:12px;letter-spacing:0}
+/* order */
+.order{padding:56px 0 80px}
+.order .grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:48px;align-items:start}
+.order h2{font:800 clamp(2.4rem,5vw,4.4rem)/.95 var(--sans);letter-spacing:-.035em;margin:0 0 20px;color:#fff}
+.order p{margin:0 0 1em;color:#d9d6cf;max-width:40ch}
+.now{font:500 1rem/1.5 var(--sans);color:var(--mute);margin:18px 0 0;padding-left:18px;position:relative}
+.now::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:8px;border-radius:50%;background:#8e949a}
+.now.open::before{background:#3fbf6a}
+.slip{background:var(--slate2);padding:6px 0 0}
+.slip .fh{padding:20px 26px 0;font:800 1.3rem/1.2 var(--sans);letter-spacing:-.01em;color:#fff}
+.slip .body{padding:8px 26px 26px}
+.row{display:grid;grid-template-columns:140px minmax(0,1fr);gap:14px;align-items:center;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.1)}
+.row:last-of-type{border-bottom:0}
+.row .k{margin:0;color:var(--mute)}
+.slip input[type=text],.slip input[type=tel],.slip input[type=date],.slip select{width:100%;border:0;border-bottom:1.5px solid rgba(255,255,255,.55);background:transparent;font:400 1.08rem/1.3 var(--sans);color:#fff;padding:6px 0;outline:none;border-radius:0;-webkit-appearance:none;appearance:none;min-height:40px;color-scheme:dark}
+.slip select{background:transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%23ffffff' stroke-width='2'/%3E%3C/svg%3E") no-repeat right center;padding-right:22px}
+.slip select option{color:#111}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px}
+.qty{display:flex;align-items:center;gap:14px}
+.qty button{width:38px;height:38px;border:2px solid #fff;background:transparent;font:800 1.2rem/1 var(--sans);color:#fff;cursor:pointer;padding:0}
+.qty output{font:800 1.8rem/1 var(--sans);min-width:2.2ch;text-align:center}
+.msg{background:var(--slate);padding:14px 16px;font:400 .98rem/1.55 var(--sans);white-space:pre-wrap;margin:20px 0 14px;min-height:100px;color:#d9d6cf}
+.send{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.priv{font:400 .84rem/1.45 var(--sans);color:var(--mute);margin:14px 0 0}
+/* guests + where (white) */
+.guests{background:var(--white);color:var(--ink);padding:72px 0 0}
+.guests .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
+.guests blockquote{margin:0;font:800 1.25rem/1.35 var(--sans);letter-spacing:-.015em}
+.guests cite{display:block;font:400 .88rem/1.4 var(--sans);font-style:normal;color:var(--mute-l);margin-top:12px}
+.guests .k{color:var(--mute-l)}
+.guests .tr{font:400 .85rem/1.4 var(--sans);color:var(--mute-l);margin:16px 0 0}
+.where{background:var(--white);color:var(--ink);padding:72px 0 72px}
+.where .grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:48px;align-items:center}
+.where h2{font:800 clamp(2.4rem,5vw,4.4rem)/.95 var(--sans);letter-spacing:-.035em;margin:0 0 18px}
+.where p{margin:0 0 .5em;max-width:44ch;color:#3a3d40}
+.where .hours{font-size:1.1rem;line-height:1.7;margin-top:18px;color:#3a3d40}
+.where .hours b{font-weight:800;color:var(--ink)}
+.phone{display:inline-block;margin:22px 0 0;font:800 clamp(1.8rem,3vw,2.6rem)/1.1 var(--sans);letter-spacing:-.03em;color:var(--ink);text-decoration:none;border-bottom:4px solid var(--red)}
+.links{margin:22px 0 0;font:500 1rem/1.8 var(--sans)}
+.links a{display:inline-block;color:var(--ink);text-decoration:none;border-bottom:1.5px solid rgba(20,21,22,.35);margin:0 22px 6px 0;white-space:nowrap}
+.where figure{margin:0}
+.where figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.where figcaption{font:400 .85rem/1.4 var(--sans);color:var(--mute-l);margin-top:8px}
+footer{padding:28px 0 48px;font:400 .86rem/1.55 var(--sans);color:var(--mute)}
+footer p{margin:0 0 8px;max-width:100ch}
+@media(max-width:860px){
+  .top{height:64px} .name small{display:none}
+  .hero{padding:0 0 32px} .hero .grid{grid-template-columns:minmax(0,1fr);gap:0}
+  .hero .float{margin:0 calc(var(--pad)*-1)} .hero .float img{-webkit-mask-image:radial-gradient(ellipse 62% 62% at 50% 50%,#000 40%,transparent 100%);mask-image:radial-gradient(ellipse 62% 62% at 50% 50%,#000 40%,transparent 100%)}
+  .hero .k{font-size:.76rem;letter-spacing:.1em;margin-bottom:8px}
+  h1{font-size:7.2rem;margin-top:-.15em} .hero blockquote{font-size:1.1rem} .hero .acts{margin-top:24px;gap:20px}
+  .dish{padding:44px 0} .dish .grid{grid-template-columns:minmax(0,1fr);gap:14px} .dish .grid.flip .words{order:0}
+  .dish .grid>figure,.dish .grid>.pair{order:-1} .dish.light .grid>figure{margin:0 calc(var(--pad)*-1)}
+  .dish .float{margin:0 calc(var(--pad)*-1)}
+  .vi{font-size:3.2rem} .lv{font-size:1.08rem}
+  .pair{gap:14px} .pair figcaption{font-size:.9rem}
+  .kitchen{padding:48px 0 24px} .kitchen .grid{grid-template-columns:minmax(0,1fr);gap:8px} .kitchen .float{margin:0 calc(var(--pad)*-1)}
+  .order{padding:40px 0 56px} .order .grid{grid-template-columns:minmax(0,1fr);gap:28px}
+  .slip .fh{padding:16px 18px 0} .slip .body{padding:6px 18px 18px}
+  .row{grid-template-columns:minmax(0,1fr);gap:6px}
+  .guests{padding-top:48px} .guests .grid{grid-template-columns:minmax(0,1fr);gap:26px}
+  .where{padding:48px 0} .where .grid{grid-template-columns:minmax(0,1fr);gap:26px}
+}
+</style>
+</head>
+<body>
+<div class="notice"><b>Nikita</b> ·
+  <span data-lang="lv">Nesaistošs dizaina priekšlikums, nav restorāna oficiālā lapa.</span>
+  <span data-lang="en" hidden>A non-binding design proposal, not the restaurant's official site.</span>
+</div>
+
+<div class="wrap top">
+  <a class="name" href="#">SAPA<small>Skolas iela 12, Rīga</small></a>
+  <nav class="lang" aria-label="Valoda"><a data-set="lv" class="on">LV</a><a data-set="en">EN</a></nav>
+</div>
+
+<section class="hero"><div class="wrap"><div class="grid">
+  <div>
+    <p class="k"><span data-lang="lv">Vjetnamiešu virtuve · Skolas iela 12</span><span data-lang="en" hidden>Vietnamese kitchen · Skolas iela 12</span></p>
+    <h1>Phở</h1>
+    <blockquote data-lang="lv">„iepazīstināt ar īstām Āzijas un Vjetnamas garšām, izmantojot svaigumu un izcilību”<cite>restorāna Facebook lapa</cite></blockquote>
+    <blockquote data-lang="en" hidden>“to introduce the real flavours of Asia and Vietnam, through freshness and excellence”<cite>the restaurant's Facebook page — translated from Latvian</cite></blockquote>
+    <div class="acts">
+      <a class="btn" href="https://wolt.com/en/lva/riga/restaurant/sapa-vjetnamiesu-azijas-restorans" rel="noopener"><span data-lang="lv">Pasūtīt Wolt ↗</span><span data-lang="en" hidden>Order on Wolt ↗</span></a>
+      <a class="tel" href="tel:+37128326666">28 326 666</a>
+    </div>
+  </div>
+  <figure class="float"><img src="img/pho-top.jpg" width="1600" height="1181" fetchpriority="high" alt="Phở ar liellopu no augšas: bļoda, sarkani irbulīši, bazilika lapas, čili un laims uz tumša galda"></figure>
+</div></div></section>
+
+<section class="dish light"><div class="wrap"><div class="grid">
+  <div class="words">
+    <p class="vi">Gỏi cuốn</p>
+    <p class="lv"><span data-lang="lv">Svaigie rullīši rīsu papīrā ar garnelēm, zaļumiem un mērci.</span><span data-lang="en" hidden>Fresh rolls in rice paper with prawns, herbs and a dip.</span></p>
+  </div>
+  <figure><img src="img/rolls-w.jpg" width="1400" height="933" loading="lazy" alt="Svaigie rullīši ar garnelēm uz zili balta šķīvja, laims un čili"></figure>
+</div></div></section>
+
+<section class="dish"><div class="wrap"><div class="grid flip">
+  <div class="words">
+    <p class="vi">Cơm gà</p>
+    <p class="lv"><span data-lang="lv">Kraukšķīga vista ar rīsiem, gurķiem un asu mērci.</span><span data-lang="en" hidden>Crispy chicken with rice, cucumber and a hot sauce.</span></p>
+  </div>
+  <figure class="float"><img src="img/chicken-top.jpg" width="1600" height="1200" loading="lazy" alt="Cepta vista ar rīsiem uz zila šķīvja, blakus mērce, zvaigžņu anīss un zaļumi"></figure>
+</div></div></section>
+
+<section class="dish light"><div class="wrap">
+  <div class="grid">
+    <div class="words">
+      <p class="vi">Cà ri</p>
+      <p class="lv"><span data-lang="lv">Zaļais un sarkanais karijs — ar rīsiem, laimu un čili.</span><span data-lang="en" hidden>Green and red curry — with rice, lime and chili.</span></p>
+    </div>
+    <div class="pair">
+      <figure><img src="img/green.jpg" width="1400" height="933" loading="lazy" alt="Zaļais karijs zili baltā bļodā ar rīsiem un laimu"><figcaption><b>xanh</b> · <span data-lang="lv">zaļais</span><span data-lang="en" hidden>green</span></figcaption></figure>
+      <figure><img src="img/red.jpg" width="1400" height="933" loading="lazy" alt="Sarkanais karijs zili baltā bļodā ar rīsiem, laimu un čili"><figcaption><b>đỏ</b> · <span data-lang="lv">sarkanais</span><span data-lang="en" hidden>red</span></figcaption></figure>
+    </div>
+  </div>
+  <p class="note"><span data-lang="lv">Nosaukumi — pēc tā, kas redzams fotogrāfijās. Precīzos nosaukumus un cenas dod ēdienkarte: Wolt un uz vietas.</span><span data-lang="en" hidden>Names describe what the photographs show. Exact names and prices are on the menu: Wolt and at the table.</span></p>
+</div></section>
+
+<section class="kitchen"><div class="wrap"><div class="grid">
+  <figure class="float"><img src="img/bowls-top.jpg" width="1600" height="1200" loading="lazy" alt="Vista ar rīsiem un dārzeņiem, tomātu zupa ar vistu, tomāts, loki un zvaigžņu anīss uz tumša galda"></figure>
+  <div>
+    <blockquote data-lang="lv">Phở ir pirmais, ko šeit min — gan viņi paši, gan viesi.</blockquote>
+    <blockquote data-lang="en" hidden>Phở is the first thing anyone mentions — the restaurant and the guests alike.</blockquote>
+    <blockquote class="q" data-lang="lv">„Pho ir palicis labāks un paplašinājusies ēdienkarte”<cite>Aspic · Google · 5★</cite></blockquote>
+    <blockquote class="q" data-lang="en" hidden>“The pho has got better and the menu has grown”<cite>Aspic · Google · 5★ — translated from Latvian</cite></blockquote>
+  </div>
+</div></div></section>
+
+<section class="order" id="galdins"><div class="wrap"><div class="grid">
+  <div>
+    <h2><span data-lang="lv">Mājās vai uz vietas</span><span data-lang="en" hidden>At home or at the table</span></h2>
+    <p><span data-lang="lv">Mājās — Wolt, kā līdz šim. Uz vietas — uzrakstiet, cik jūs būsiet un kad: ziņa aiziet restorānam ar visu, kas jāzina.</span><span data-lang="en" hidden>At home — Wolt, as before. At the table — write how many you are and when: the message reaches the restaurant with everything it needs.</span></p>
+    <a class="btn" href="https://wolt.com/en/lva/riga/restaurant/sapa-vjetnamiesu-azijas-restorans" rel="noopener"><span data-lang="lv">Pasūtīt Wolt ↗</span><span data-lang="en" hidden>Order on Wolt ↗</span></a>
+    <p class="now" id="now">…</p>
+  </div>
+  <form class="slip" id="slip" onsubmit="return false">
+    <div class="fh"><span data-lang="lv">Galdiņš SAPA</span><span data-lang="en" hidden>A table at SAPA</span></div>
+    <div class="body">
+      <div class="row"><span class="k"><span data-lang="lv">Cik personām</span><span data-lang="en" hidden>How many</span></span>
+        <div class="qty"><button type="button" id="minus" aria-label="mazāk">−</button><output id="qty">2</output><button type="button" id="plus" aria-label="vairāk">+</button></div></div>
+      <div class="row"><span class="k"><span data-lang="lv">Kad</span><span data-lang="en" hidden>When</span></span>
+        <div class="two"><input type="date" id="date"><select id="time"></select></div></div>
+      <div class="row"><span class="k"><span data-lang="lv">Vārds</span><span data-lang="en" hidden>Name</span></span><input type="text" id="name" autocomplete="name"></div>
+      <div class="row"><span class="k"><span data-lang="lv">Tālrunis</span><span data-lang="en" hidden>Phone</span></span><input type="tel" id="phone" autocomplete="tel" inputmode="tel"></div>
+      <div class="msg" id="msg" aria-live="polite"></div>
+      <div class="send">
+        <a class="btn" id="sms" href="#"><span data-lang="lv">Sūtīt SMS</span><span data-lang="en" hidden>Send as SMS</span></a>
+        <a class="tel" href="tel:+37128326666"><span data-lang="lv">vai zvanīt 28 326 666</span><span data-lang="en" hidden>or call 28 326 666</span></a>
+      </div>
+      <p class="priv"><span data-lang="lv">Ziņa top jūsu ierīcē — šī lapa neko neglabā.</span><span data-lang="en" hidden>The message is composed on your device — this page stores nothing.</span></p>
+    </div>
+  </form>
+</div></div></section>
+
+<section class="guests"><div class="wrap">
+  <p class="k"><span data-lang="lv">Viesi · 4,3★ no 141 atsauksmes</span><span data-lang="en" hidden>Guests · 4.3★ from 141 reviews</span></p>
+  <div class="grid" data-lang="lv">
+    <blockquote>Ēdiens un apkalpošana- izcili<cite>Ilze P. · Google · 5★</cite></blockquote>
+    <blockquote>Ļoti forša, klusā vietā!!! Laipni darbinieki!!! Garšīgs ēdiens!!!<cite>Marianna K. · Google · 5★</cite></blockquote>
+    <blockquote>Pho ir palicis labāks un paplašinājusies ēdienkarte<cite>Aspic · Google · 5★</cite></blockquote>
+  </div>
+  <div class="grid" data-lang="en" hidden>
+    <blockquote>Food and service — excellent<cite>Ilze P. · Google · 5★</cite></blockquote>
+    <blockquote>A really nice, quiet place. Kind staff. Tasty food.<cite>Marianna K. · Google · 5★</cite></blockquote>
+    <blockquote>The pho has got better and the menu has grown<cite>Aspic · Google · 5★</cite></blockquote>
+  </div>
+  <p class="tr" data-lang="en" hidden>Translated from Latvian.</p>
+</div></section>
+
+<section class="where"><div class="wrap"><div class="grid">
+  <div>
+    <h2>Skolas iela 12</h2>
+    <p><span data-lang="lv">Rīga, LV-1010 — klusa iela starp Brīvības un Tērbatas ielu.</span><span data-lang="en" hidden>Rīga, LV-1010 — a quiet street between Brīvības and Tērbatas streets.</span></p>
+    <p class="hours" data-lang="lv"><b>Pirmdien – piektdien</b> 11:00 – 22:00<br><b>Sestdien – svētdien</b> 12:00 – 22:00<br><span style="color:#666b70">kā Google kartēs</span></p>
+    <p class="hours" data-lang="en" hidden><b>Monday – Friday</b> 11:00 – 22:00<br><b>Saturday – Sunday</b> 12:00 – 22:00<br><span style="color:#666b70">as on Google Maps</span></p>
+    <a class="phone" href="tel:+37128326666">28 326 666</a>
+    <p class="links"><a href="https://wolt.com/en/lva/riga/restaurant/sapa-vjetnamiesu-azijas-restorans" rel="noopener">Wolt ↗</a><a href="https://www.instagram.com/sapa_vietnam_restaurant/" rel="noopener">Instagram ↗</a><a href="https://www.google.com/maps/search/?api=1&query=SAPA+Skolas+iela+12+R%C4%ABga" rel="noopener"><span data-lang="lv">Google kartē ↗</span><span data-lang="en" hidden>Google Maps ↗</span></a></p>
+  </div>
+  <figure><img src="img/street.jpg" width="640" height="480" loading="lazy" alt="Skolas iela 12 no ielas"><figcaption>Google Street View</figcaption></figure>
+</div></div></section>
+
+<footer><div class="wrap">
+  <p><span data-lang="lv">Fotogrāfijas: SAPA vjetnamiešu Asia restaurant (visi ēdieni) · iela: Google Street View · Fakti: Google kartes, restorāna Facebook lapa, Wolt.</span><span data-lang="en" hidden>Photographs: SAPA vjetnamiešu Asia restaurant (all dishes) · street: Google Street View · Facts: Google Maps, the restaurant's Facebook page, Wolt.</span></p>
+  <p><span data-lang="lv">Ja priekšlikums interesē — nākamais solis: ēdienkarte ar cenām lapā, viens tālrunis un viens darba laiks visur (Google un Facebook šobrīd atšķiras), lapa jūsu adresē un poga „Vietne” Google kartēs. Dizaina priekšlikums: Nikita · ngoloveckis@gmail.com</span><span data-lang="en" hidden>If this proposal is of interest — the next step: the menu with prices on the page, one phone number and one set of hours everywhere (Google and Facebook differ today), this page at your own address and the “Website” button on Google Maps. Design proposal: Nikita · ngoloveckis@gmail.com</span></p>
+</div></footer>
+
+<script>
+(function(){
+  const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+  let lang='lv', qty=2;
+  const H={1:[11,22],2:[11,22],3:[11,22],4:[11,22],5:[11,22],6:[12,22],0:[12,22]};
+  function riga(){const p=new Intl.DateTimeFormat('en-GB',{timeZone:'Europe/Riga',weekday:'short',hour:'numeric',minute:'numeric',hour12:false}).formatToParts(new Date());const g=t=>p.find(x=>x.type===t).value;const wd={Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[g('weekday')];return {wd,h:parseInt(g('hour'),10)%24+parseInt(g('minute'),10)/60}}
+  function now(){const {wd,h}=riga();const [o,c]=H[wd];const el=$('#now');const open=h>=o&&h<c;el.className='now'+(open?' open':'');
+    if(lang==='lv')el.textContent=open?`Šodien atvērts līdz ${c}:00 — kā Google kartēs`:`Šobrīd slēgts · atver ${(h<o?'šodien':'rīt')} ${H[h<o?wd:(wd+1)%7][0]}:00`;
+    else el.textContent=open?`Open today until ${c}:00 — as on Google Maps`:`Closed now · opens ${(h<o?'today':'tomorrow')} at ${H[h<o?wd:(wd+1)%7][0]}:00`}
+  const T={lv:{hello:'Labdien! Vēlos rezervēt galdiņu SAPA.',n:'Personas',when:'Kad',about:'ap',name:'Vārds',phone:'Tālrunis',dash:'…'},en:{hello:'Hello! I would like to book a table at SAPA.',n:'People',when:'When',about:'around',name:'Name',phone:'Phone',dash:'…'}};
+  const time=$('#time');for(let h=11;h<=21;h++){for(const m of ['00','30']){const o=document.createElement('option');o.value=o.textContent=String(h).padStart(2,'0')+':'+m;if(h===13&&m==='00')o.selected=true;time.appendChild(o)}}
+  const d=new Date();d.setDate(d.getDate()+1);$('#date').value=d.toISOString().slice(0,10);$('#date').min=new Date().toISOString().slice(0,10);
+  const fdate=v=>{if(!v)return T[lang].dash;const [y,m,dd]=v.split('-');return `${dd}.${m}.${y}`};
+  function build(){const t=T[lang];const L=[t.hello,`${t.n}: ${qty}`,`${t.when}: ${fdate($('#date').value)}, ${t.about} ${time.value}`,`${t.name}: ${$('#name').value.trim()||t.dash} · ${t.phone}: ${$('#phone').value.trim()||t.dash}`];const m=L.join('\n');$('#msg').textContent=m;$('#sms').href='sms:+37128326666?&body='+encodeURIComponent(m)}
+  function setLang(l){lang=l;$$('[data-lang]').forEach(e=>{e.hidden=e.dataset.lang!==l});document.documentElement.lang=l;$$('.lang a').forEach(a=>a.classList.toggle('on',a.dataset.set===l));now();build()}
+  $$('.lang a').forEach(a=>a.addEventListener('click',()=>setLang(a.dataset.set)));
+  $('#minus').addEventListener('click',()=>{qty=Math.max(1,qty-1);$('#qty').value=qty;build()});
+  $('#plus').addEventListener('click',()=>{qty=Math.min(30,qty+1);$('#qty').value=qty;build()});
+  $$('#slip input,#slip select').forEach(e=>{e.addEventListener('input',build);e.addEventListener('change',build)});
+  now();build();setInterval(now,60000);
+})();
+</script>
+</body>
+</html>
